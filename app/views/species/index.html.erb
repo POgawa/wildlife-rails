@@ -1,0 +1,11 @@
+<h1>Wildlife Tracker</h1>
+
+<h2>These are the animals currently in the database:</h2>
+<ul>
+  <% @species.each do |specie| %>
+    <li><%= specie.name %></li>
+  <% end %>
+</ul>
+
+<button><a href="species/new">Add a species to the database</a></button>
+<button><a href="species/edit">Edit a species in the database</a></button>
