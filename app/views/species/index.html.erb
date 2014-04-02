@@ -4,8 +4,11 @@
 <ul>
   <% @species.each do |specie| %>
     <li><%= specie.name %></li>
+    <a href="species/<%= specie.id %>/edit">Edit this species</a>
+    <a data-method="species/destroy" href="species/<%= specie.id %>">Delete this species</a>
   <% end %>
 </ul>
 
 <button><a href="species/new">Add a species to the database</a></button>
-<button><a href="species/edit">Edit a species in the database</a></button>
+
+
